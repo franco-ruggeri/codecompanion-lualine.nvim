@@ -7,7 +7,8 @@ Table of Contents                    *codecompanion-lualine-table-of-contents*
 2. Features                                   |codecompanion-lualine-features|
 3. Installation                           |codecompanion-lualine-installation|
 4. Customization                         |codecompanion-lualine-customization|
-5. Links                                         |codecompanion-lualine-links|
+5. Acknowledgements                   |codecompanion-lualine-acknowledgements|
+6. Links                                         |codecompanion-lualine-links|
 A simple lualine <https://github.com/nvim-lualine/lualine.nvim> component for
 CodeCompanion <https://github.com/olimorris/codecompanion.nvim>, providing a
 status indicator with the number of active CodeCompanion requests.
@@ -95,8 +96,15 @@ You can change them as follows:
     }
 <
 
+
 ==============================================================================
-5. Links                                         *codecompanion-lualine-links*
+5. Acknowledgements                   *codecompanion-lualine-acknowledgements*
+
+This plugin is based on the example in the official documentation
+<https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration>.
+
+==============================================================================
+6. Links                                         *codecompanion-lualine-links*
 
 1. *demo*: assets/demo.gif
 
