@@ -17,7 +17,7 @@ jobs:
       - name: "Convert README to help file"
         uses: "kdheepak/panvimdoc@v4.0.1"
         with:
-          vimdoc: "codecompanion-spinner"
+          vimdoc: "codecompanion-lualine"
           demojify: true
           shiftheadinglevelby: -1
       - name: "Commit help file"
