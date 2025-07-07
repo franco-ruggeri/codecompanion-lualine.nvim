@@ -27,6 +27,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 return {
     "franco-ruggeri/codecompanion-lualine.nvim",
 }
+```
 
 ## ⚙️ Usage
 
@@ -69,7 +70,7 @@ You can change them as follows:
 ```lua
 require('lualine').setup {
   sections = {
-    lualine_c = {
+    lualine_x = {
       {
         "codecompanion",
         icon = " ",
@@ -83,5 +84,5 @@ require('lualine').setup {
 
 ## 🙏 Acknowledgements
 
-This plugin is based on the [example in the official
+This plugin is based on the [example from the official
 documentation](https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration).
