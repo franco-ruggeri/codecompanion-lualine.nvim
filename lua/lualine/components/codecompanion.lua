@@ -22,7 +22,7 @@ function M:init(options)
 
 	self.options = vim.tbl_deep_extend("keep", self.options or {}, default_options)
 	self.n_requests = 0
-	self.spinner_index = 1
+	self.spinner_index = 0
 
 	vim.api.nvim_create_autocmd("User", {
 		pattern = "CodeCompanionRequestStarted",
@@ -50,6 +50,7 @@ function M:update_status()
 		symbol = self.options.spinner_symbols[self.spinner_index]
 	else
 		symbol = self.options.done_symbol
+		self.spinner_index = 0
 	end
 	return ("%d %s"):format(self.n_requests, symbol)
 end
