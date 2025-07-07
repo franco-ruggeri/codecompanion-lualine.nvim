@@ -80,3 +80,8 @@ require('lualine').setup {
   },
 }
 ```
+
+## 🙏 Acknowledgements
+
+This plugin is based on the [example in the official
+documentation](https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration).
