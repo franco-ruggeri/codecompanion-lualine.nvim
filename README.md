@@ -6,13 +6,6 @@ status indicator with the number of active CodeCompanion requests.
 
 ![demo](https://github.com/user-attachments/assets/013b6b59-a194-479f-807d-3daa6f51c138)
 
-## ⚡️ Lazy Loading Friendly
-
-This component is fully lazy-loading aware. The component will not load or
-display unless CodeCompanion has already been loaded for some other reason. This
-means you can safely include it in your lualine setup without interfering with
-your plugin manager's lazy loading optimizations.
-
 ## ✨ Features
 
 - Displays the number of active CodeCompanion requests.
@@ -81,6 +74,13 @@ require('lualine').setup {
   },
 }
 ```
+
+## ⚡️ Lazy Loading Friendly
+
+This component is fully lazy-loading aware. The component will not load or
+display unless CodeCompanion has already been loaded for some other reason. This
+means you can safely include it in your lualine setup without interfering with
+your plugin manager's lazy loading optimizations.
 
 ## 🙏 Acknowledgements
 
