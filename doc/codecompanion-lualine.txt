@@ -6,9 +6,10 @@ Table of Contents                    *codecompanion-lualine-table-of-contents*
 1. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
 2. Features                                   |codecompanion-lualine-features|
 3. Installation                           |codecompanion-lualine-installation|
-4. Customization                         |codecompanion-lualine-customization|
-5. Acknowledgements                   |codecompanion-lualine-acknowledgements|
-6. Links                                         |codecompanion-lualine-links|
+4. Usage                                         |codecompanion-lualine-usage|
+5. Customization                         |codecompanion-lualine-customization|
+6. Acknowledgements                   |codecompanion-lualine-acknowledgements|
+7. Links                                         |codecompanion-lualine-links|
 A simple lualine <https://github.com/nvim-lualine/lualine.nvim> component for
 CodeCompanion <https://github.com/olimorris/codecompanion.nvim>, providing a
 status indicator with the number of active CodeCompanion requests.
@@ -40,12 +41,15 @@ With lazy.nvim <https://github.com/folke/lazy.nvim>
     return {
         "franco-ruggeri/codecompanion-lualine.nvim",
     }
-    
-    ## ⚙️ Usage
-    
-    After installing, use `"codecompanion"` in your lualine sections:
-    
-    ```lua
+<
+
+
+==============================================================================
+4. Usage                                         *codecompanion-lualine-usage*
+
+After installing, use `"codecompanion"` in your lualine sections:
+
+>lua
     sections = {
         lualine_x = {
             -- other components
@@ -56,7 +60,7 @@ With lazy.nvim <https://github.com/folke/lazy.nvim>
 
 
 ==============================================================================
-4. Customization                         *codecompanion-lualine-customization*
+5. Customization                         *codecompanion-lualine-customization*
 
 The default options are:
 
@@ -84,7 +88,7 @@ You can change them as follows:
 >lua
     require('lualine').setup {
       sections = {
-        lualine_c = {
+        lualine_x = {
           {
             "codecompanion",
             icon = " ",
@@ -98,13 +102,13 @@ You can change them as follows:
 
 
 ==============================================================================
-5. Acknowledgements                   *codecompanion-lualine-acknowledgements*
+6. Acknowledgements                   *codecompanion-lualine-acknowledgements*
 
-This plugin is based on the example in the official documentation
+This plugin is based on the example from the official documentation
 <https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration>.
 
 ==============================================================================
-6. Links                                         *codecompanion-lualine-links*
+7. Links                                         *codecompanion-lualine-links*
 
 1. *demo*: assets/demo.gif
 
