@@ -4,7 +4,7 @@ A simple [lualine](https://github.com/nvim-lualine/lualine.nvim) component for
 [CodeCompanion](https://github.com/olimorris/codecompanion.nvim), providing a
 status indicator with the number of active CodeCompanion requests.
 
-![](assets/demo.gif)
+![demo](assets/demo.gif)
 
 ## ⚡️ Lazy Loading Friendly
 
