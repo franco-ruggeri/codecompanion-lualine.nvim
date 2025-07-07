@@ -3,11 +3,11 @@
 ==============================================================================
 Table of Contents                    *codecompanion-lualine-table-of-contents*
 
-1. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
-2. Features                                   |codecompanion-lualine-features|
-3. Installation                           |codecompanion-lualine-installation|
-4. Usage                                         |codecompanion-lualine-usage|
-5. Customization                         |codecompanion-lualine-customization|
+1. Features                                   |codecompanion-lualine-features|
+2. Installation                           |codecompanion-lualine-installation|
+3. Usage                                         |codecompanion-lualine-usage|
+4. Customization                         |codecompanion-lualine-customization|
+5. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
 6. Acknowledgements                   |codecompanion-lualine-acknowledgements|
 7. Links                                         |codecompanion-lualine-links|
 A simple lualine <https://github.com/nvim-lualine/lualine.nvim> component for
@@ -16,16 +16,7 @@ status indicator with the number of active CodeCompanion requests.
 
 
 ==============================================================================
-1. Lazy Loading Friendly         *codecompanion-lualine-lazy-loading-friendly*
-
-This component is fully lazy-loading aware. The component will not load or
-display unless CodeCompanion has already been loaded for some other reason.
-This means you can safely include it in your lualine setup without interfering
-with your plugin manager’s lazy loading optimizations.
-
-
-==============================================================================
-2. Features                                   *codecompanion-lualine-features*
+1. Features                                   *codecompanion-lualine-features*
 
 - Displays the number of active CodeCompanion requests.
 - Shows a spinner while requests are active, and a checkmark () when idle.
@@ -33,7 +24,7 @@ with your plugin manager’s lazy loading optimizations.
 
 
 ==============================================================================
-3. Installation                           *codecompanion-lualine-installation*
+2. Installation                           *codecompanion-lualine-installation*
 
 With lazy.nvim <https://github.com/folke/lazy.nvim>
 
@@ -45,7 +36,7 @@ With lazy.nvim <https://github.com/folke/lazy.nvim>
 
 
 ==============================================================================
-4. Usage                                         *codecompanion-lualine-usage*
+3. Usage                                         *codecompanion-lualine-usage*
 
 After installing, use `"codecompanion"` in your lualine sections:
 
@@ -60,7 +51,7 @@ After installing, use `"codecompanion"` in your lualine sections:
 
 
 ==============================================================================
-5. Customization                         *codecompanion-lualine-customization*
+4. Customization                         *codecompanion-lualine-customization*
 
 The default options are:
 
@@ -99,6 +90,15 @@ You can change them as follows:
       },
     }
 <
+
+
+==============================================================================
+5. Lazy Loading Friendly         *codecompanion-lualine-lazy-loading-friendly*
+
+This component is fully lazy-loading aware. The component will not load or
+display unless CodeCompanion has already been loaded for some other reason.
+This means you can safely include it in your lualine setup without interfering
+with your plugin manager’s lazy loading optimizations.
 
 
 ==============================================================================
