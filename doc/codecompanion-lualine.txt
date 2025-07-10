@@ -7,9 +7,8 @@ Table of Contents                    *codecompanion-lualine-table-of-contents*
 2. Features                                   |codecompanion-lualine-features|
 3. Installation                           |codecompanion-lualine-installation|
 4. Customization                         |codecompanion-lualine-customization|
-5. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
-6. Acknowledgements                   |codecompanion-lualine-acknowledgements|
-7. Links                                         |codecompanion-lualine-links|
+5. Acknowledgements                   |codecompanion-lualine-acknowledgements|
+6. Links                                         |codecompanion-lualine-links|
 
 ==============================================================================
 1. Overview                                   *codecompanion-lualine-overview*
@@ -50,6 +49,10 @@ With lazy.nvim <https://github.com/folke/lazy.nvim>
     }
 <
 
+Thecomponent will be enabled only after CodeCompanion is loaded, respecting its
+lazy-loading options. Thus, it is recommended that you do not add CodeCompanion
+as a dependency of lualine.
+
 
 ==============================================================================
 4. Customization                         *codecompanion-lualine-customization*
@@ -73,22 +76,13 @@ You can customize the component by passing the following options:
 
 
 ==============================================================================
-5. Lazy Loading Friendly         *codecompanion-lualine-lazy-loading-friendly*
-
-This component is fully lazy-loading aware. The component will not load or
-display unless CodeCompanion has already been loaded for some other reason.
-This means you can safely include it in your lualine setup without interfering
-with your plugin manager’s lazy loading optimizations.
-
-
-==============================================================================
-6. Acknowledgements                   *codecompanion-lualine-acknowledgements*
+5. Acknowledgements                   *codecompanion-lualine-acknowledgements*
 
 This plugin is based on the example from the official documentation
 <https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration>.
 
 ==============================================================================
-7. Links                                         *codecompanion-lualine-links*
+6. Links                                         *codecompanion-lualine-links*
 
 1. *demo*: https://github.com/user-attachments/assets/013b6b59-a194-479f-807d-3daa6f51c138
 
