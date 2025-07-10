@@ -1,4 +1,4 @@
-*codecompanion-lualine.txt*      For NVIM v0.8.0     Last change: 2025 July 09
+*codecompanion-lualine.txt*      For NVIM v0.8.0     Last change: 2025 July 10
 
 ==============================================================================
 Table of Contents                    *codecompanion-lualine-table-of-contents*
@@ -6,11 +6,10 @@ Table of Contents                    *codecompanion-lualine-table-of-contents*
 1. Overview                                   |codecompanion-lualine-overview|
 2. Features                                   |codecompanion-lualine-features|
 3. Installation                           |codecompanion-lualine-installation|
-4. Usage                                         |codecompanion-lualine-usage|
-5. Customization                         |codecompanion-lualine-customization|
-6. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
-7. Acknowledgements                   |codecompanion-lualine-acknowledgements|
-8. Links                                         |codecompanion-lualine-links|
+4. Customization                         |codecompanion-lualine-customization|
+5. Lazy Loading Friendly         |codecompanion-lualine-lazy-loading-friendly|
+6. Acknowledgements                   |codecompanion-lualine-acknowledgements|
+7. Links                                         |codecompanion-lualine-links|
 
 ==============================================================================
 1. Overview                                   *codecompanion-lualine-overview*
@@ -35,51 +34,27 @@ With lazy.nvim <https://github.com/folke/lazy.nvim>
 
 >lua
     return {
-        "franco-ruggeri/codecompanion-lualine.nvim",
-    }
-<
-
-
-==============================================================================
-4. Usage                                         *codecompanion-lualine-usage*
-
-After installing, use `"codecompanion"` in your lualine sections:
-
->lua
-    sections = {
-        lualine_x = {
-            -- other components
-            "codecompanion"
+        "nvim-lualine/lualine.nvim",
+        dependencies = {
+            "franco-ruggeri/codecompanion-lualine.nvim",
+            -- Other dependencies
         },
-    },
+        opts = {
+            sections = {
+                lualine_x = {
+                    "codecompanion",
+                    -- Other components
+                },
+            },
+        },
+    }
 <
 
 
 ==============================================================================
-5. Customization                         *codecompanion-lualine-customization*
+4. Customization                         *codecompanion-lualine-customization*
 
-The default options are:
-
->lua
-    local default_options = {
-     icon = " ",
-     spinner_symbols = {
-      "⠋",
-      "⠙",
-      "⠹",
-      "⠸",
-      "⠼",
-      "⠴",
-      "⠦",
-      "⠧",
-      "⠇",
-      "⠏",
-     },
-     done_symbol = "✓",
-    }
-<
-
-You can change them as follows:
+You can customize the component by passing the following options:
 
 >lua
     require('lualine').setup {
@@ -98,7 +73,7 @@ You can change them as follows:
 
 
 ==============================================================================
-6. Lazy Loading Friendly         *codecompanion-lualine-lazy-loading-friendly*
+5. Lazy Loading Friendly         *codecompanion-lualine-lazy-loading-friendly*
 
 This component is fully lazy-loading aware. The component will not load or
 display unless CodeCompanion has already been loaded for some other reason.
@@ -107,13 +82,13 @@ with your plugin manager’s lazy loading optimizations.
 
 
 ==============================================================================
-7. Acknowledgements                   *codecompanion-lualine-acknowledgements*
+6. Acknowledgements                   *codecompanion-lualine-acknowledgements*
 
 This plugin is based on the example from the official documentation
 <https://codecompanion.olimorris.dev/usage/ui.html#lualine-nvim-integration>.
 
 ==============================================================================
-8. Links                                         *codecompanion-lualine-links*
+7. Links                                         *codecompanion-lualine-links*
 
 1. *demo*: https://github.com/user-attachments/assets/013b6b59-a194-479f-807d-3daa6f51c138
 
