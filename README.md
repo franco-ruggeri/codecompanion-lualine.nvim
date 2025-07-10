@@ -36,6 +36,10 @@ return {
 }
 ```
 
+The component will be enabled only after CodeCompanion is loaded, respecting its
+lazy-loading options. Thus, it is recommended that you do not add CodeCompanion
+as a dependency of lualine.
+
 ## 🛠️ Customization
 
 You can customize the component by passing the following options:
@@ -54,13 +58,6 @@ require('lualine').setup {
   },
 }
 ```
-
-## ⚡️ Lazy Loading Friendly
-
-This component is fully lazy-loading aware. The component will not load or
-display unless CodeCompanion has already been loaded for some other reason. This
-means you can safely include it in your lualine setup without interfering with
-your plugin manager's lazy loading optimizations.
 
 ## 🙏 Acknowledgements
 
