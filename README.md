@@ -20,47 +20,25 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 return {
-    "franco-ruggeri/codecompanion-lualine.nvim",
-}
-```
-
-## ⚙️ Usage
-
-After installing, use `"codecompanion"` in your lualine sections:
-
-```lua
-sections = {
-    lualine_x = {
-        -- other components
-        "codecompanion"
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+        "franco-ruggeri/codecompanion-lualine.nvim",
+        -- Other dependencies
     },
-},
+    opts = {
+        sections = {
+            lualine_x = {
+                "codecompanion",
+                -- Other components
+            },
+        },
+    },
+}
 ```
 
 ## 🛠️ Customization
 
-The default options are:
-
-```lua
-local default_options = {
- icon = " ",
- spinner_symbols = {
-  "⠋",
-  "⠙",
-  "⠹",
-  "⠸",
-  "⠼",
-  "⠴",
-  "⠦",
-  "⠧",
-  "⠇",
-  "⠏",
- },
- done_symbol = "✓",
-}
-```
-
-You can change them as follows:
+You can customize the component by passing the following options:
 
 ```lua
 require('lualine').setup {
