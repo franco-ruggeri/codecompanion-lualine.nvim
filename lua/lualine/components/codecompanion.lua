@@ -2,18 +2,7 @@ local M = require("lualine.component"):extend()
 
 local default_options = {
 	icon = " ",
-	spinner_symbols = {
-		"⠋",
-		"⠙",
-		"⠹",
-		"⠸",
-		"⠼",
-		"⠴",
-		"⠦",
-		"⠧",
-		"⠇",
-		"⠏",
-	},
+	spinner_symbols = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" },
 	done_symbol = "✓",
 }
 
